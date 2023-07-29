@@ -23,6 +23,7 @@ class FirstScreen(Screen):
         # download the image
         urllib.request.urlretrieve(self.get_image_link(),image_path)
         return image_path
+
     def set_image(self):
         # set image in widget
         self.manager.current_screen.ids.img.source = self.download_image()
